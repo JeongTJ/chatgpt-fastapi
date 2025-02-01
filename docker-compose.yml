@@ -9,6 +9,6 @@ services:
       context: ./srcs/ai-server
       dockerfile: Dockerfile  # 아래에 Dockerfile 예시 참고
     volumes:
-      - ./srcs/ai-server/app:/app  # 현재 디렉토리를 컨테이너 내 /app에 마운트
+      - ./srcs/ai-server/project:/project  # 현재 디렉토리를 컨테이너 내 /app에 마운트
     ports:
       - "8000:8000"  # 호스트의 8000 포트를 컨테이너의 8000 포트
