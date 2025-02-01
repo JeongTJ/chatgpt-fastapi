@@ -3,6 +3,8 @@ services:
   ai-server:
     init: true
     container_name: ai-server
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
     build:
       context: ./srcs/ai-server
       dockerfile: Dockerfile  # 아래에 Dockerfile 예시 참고

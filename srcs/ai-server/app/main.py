@@ -11,5 +11,5 @@ def read_root():
     return {"Hello": test_func(19)}
 
 @app.get("/api/hello")
-def read_root():
-    return {"Hello": hello()}
+def read_root(user_request: str):
+    return {"Hello": hello(user_request)}
