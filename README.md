@@ -22,9 +22,14 @@
         - `services/restaurant.py`에서 `services/base.py`를 Import하고 디자인한 프롬프트를 적용하여 벡엔드로 보낼 데이터를 생성
     - 테스트
         1. 웹 브라우저의 [`localhost:8000`](http://localhost:8000) 포트로 이동
-        2. `localhost:8000/api/v1/restaurants/search?query="부산고기맛집 추천"` 같이 query로 요청을 작성 후 이동
-        3. 응답 json데이터가 브라우저에 나타남.
-        4. 추후 API통신을 위한 URI. 
+        2. `localhost:8000/redoc`으로 API예시 확인 가능
+           ![capston-3](https://github.com/user-attachments/assets/846c4b7a-c5c7-4525-a15c-184b888f5684)
+        4. `localhost:8000/docs`로 API확인 가능
+           ![capston-2](https://github.com/user-attachments/assets/69d4217f-34b1-44e2-a547-f158cc11722f)
+        5. `localhost:8000/api/v1/restaurants/search?query="부산고기맛집 추천"` 같이 query로 요청을 작성 후 이동
+           ![capston-1](https://github.com/user-attachments/assets/8926c8e5-a74e-4ec4-a554-48ce82fb9bec)
+        6. 응답 json데이터가 브라우저에 나타남.
+        7. 추후 API통신을 위한 URI. 
 - 개발 계획
     - 서버
         - 두가지 방법
